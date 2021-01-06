@@ -27,3 +27,21 @@
     font-size: 1.4rem;
     font-weight: bold;
 }
+
+#video-avatar {
+    right: 0px;
+}
+
+#noel {
+    max-width: 70%;
+}
+
+#industria {
+    background-color: rgba(7, 23, 255, 0.116);
+    padding: 1%;
+    margin: 0%;
+}
+
+#botao-demonstracao {
+    max-width: 10rem;
+}
