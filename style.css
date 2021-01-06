@@ -1,0 +1,11 @@
+/* body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+} */
+#particles-js{
+  height: 100%;
+  background-color: black;
+  background: rgb(97, 96, 96);
+  background: url(/assets/img/bg.jpg);
+}

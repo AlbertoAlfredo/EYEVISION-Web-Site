@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:700');
+
+body { background-color: #19AAD1; }
+
+header { 
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #FFCC4C;
+  letter-spacing: 1px;  
+}
+
+.arrow {
+  color: #FFCC4C;
+  animation: up-and-down 1.5s ease-in-out infinite;
+}
+
+@keyframes up-and-down {
+  0%, 100% { transform: translateY(-15%)}
+  50%   { transform: translateY(15%)}
+}
+
+.box {
+  width: 120px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  opacity: 1;
+  background-color: #EFEFEF;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.box--inline {
+  display: inline-block;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 150px;
+ }
+
+.from-bottom {
+  animation: fade-in 0.8s cubic-bezier(.17,.67,.49,1.02);
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fade-in {
+    0% { 
+      opacity: 0;
+      transform: translateY(50%);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
