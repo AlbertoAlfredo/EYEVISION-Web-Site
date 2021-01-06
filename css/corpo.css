@@ -1,0 +1,29 @@
+.container {
+    background-color: #fff;
+    min-height: 100%;
+    padding: 5rem;
+}
+
+.artigo > h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 10px auto;
+}
+
+.elemento-img {
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
+.elemento-texto {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+}
+.destaque {
+    font-size: 1.4rem;
+    font-weight: bold;
+}

@@ -4,7 +4,7 @@ html, body{
   width: 100%;
   font-family: 'Century Gothic',sans-serif;
   /* font: 20px Lato,sans-serif; */
-  background: url(../assets/img/bg.jpg);
+  background: url(../assets/img/projecao.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -21,9 +21,6 @@ html, body{
   display: table;
 } */
 
-/* #particles-js{
-  background-color: rgb(0, 0, 0);
-} */
 .nav{
   position: fixed;
   top: 0;
@@ -95,6 +92,13 @@ ul li:nth-child(8) a{
   border-radius: 4px;
 }
 
+#particles-js{
+  height: 100%;
+  background-color: black;
+  background: rgb(97, 96, 96);
+  background: url(/assets/img/bg.jpg);
+}
+
 .header{
   position: absolute;
   top: 50%;
@@ -129,9 +133,11 @@ ul li:nth-child(8) a{
 
 #titulo{
   font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black
 }
 #titulo p{
   font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black
 }
 
 /* responsivo */
@@ -163,7 +169,7 @@ ul li:nth-child(8) a{
     left: 0;
   }
   #titulo{
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
