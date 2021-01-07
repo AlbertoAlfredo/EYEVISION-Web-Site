@@ -1,7 +1,12 @@
 #solu-footer{
   background-color: hotpink;
 }
-
+.footer- {
+  background: #3f3e3e;
+  color: #d3d3d3;
+  min-height: 30rem;
+  position: relative;
+}
 .footer {
   background: #303036;
   color: #d3d3d3;
@@ -9,22 +14,8 @@
   position: relative;
 }
 
-.footer .footer-content{
-  height: 350px;
-  display: flex;
-  justify-content: center;
-}
 
-.footer .whats{
-  text-decoration: none;
-  color: rgb(184, 184, 184);
-  }
-.footer .about{
-  margin-left: 100px;
-  margin-right: 100px;  
-  }
-
-.footer .footer-bottom{
+.footer-bottom{
   background: #343a40;
   color: #686868;
   height: opx;
