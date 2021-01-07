@@ -82,14 +82,16 @@
 }
 
 @media (max-width: 600px){
-    .container {
+    .container- {
         background-color: #fff;
         min-height: 100%;
-        padding: 0rem;
+        width: 100%;
+        padding: 0px;
     }
     
     .artigo {
-        min-height: 45rem;
+        min-height: 100%;
+        width: 100%;
         margin-top: 100px;
         margin-bottom: 50px;
     }
