@@ -3,9 +3,15 @@
   padding: 0;
   height: 100vh;
 } */
+@font-face {
+  font-family: roboto;
+  src: url('./assets/fonts/Roboto-Light.ttf');
+}
 
+p, h1, h2, h3, h4{
+  font-family: "roboto";
+}
 
-
-a a:hover a:link {
+a, a:hover, a:link {
   text-decoration:none; 
 }
