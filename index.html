@@ -2,39 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/8fce93bd89.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="assets/img/ico/eyeico.png">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="import.css">
-  <link rel="stylesheet" href="style.css">
-  <title>EYEVISION Mídias Interativas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/8fce93bd89.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/ico/eyeico.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="import.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EYEVISION Mídias Interativas</title>
 </head>
-<style>
-
-</style>
 
 <body>
-  <!-- LANDING PAGE -->
-  <div id="particles-js">
+    <!-- LANDING PAGE -->
 
-    <div class="header">
-      <!-- <img src="assets/img/logo_V_mi_bco.png" alt="Smiley face" height="240" width="200"> -->
-      <p id="titulo">
-        A inovação em um piscar de olhos
-      </p>
-    </div>
-<div class="nav">
-      <div class="logo">
-        <img src="assets/img/logo.png" alt="Smiley face" height="55" width="180">
-      </div>
-    </div>
-  </div>
+    <div id="particles-js">
+        <div class="header">
+            <p id="titulo">A inovação em um piscar de olhos</p>
+        </div>
+
+        <nav class="nav navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" 
+                    alt="Smiley face"
+                    height="55"
+                    width="180" 
+                    loading="lazy">
+                </a>
+                <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./index.html">Página Inicial</a>
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </div>
+                </div>
+        </nav>
+</div>
+<!-- Landing Page -->
 
   <!-- Página -->
 
-  <main class="container">
+  <main class="container-">
     <section class="artigo">
       <h2>Sobre nós</h2>
       <div class="border"></div>
@@ -123,7 +133,17 @@
         <p class="elemento-texto">A EYEVISION Mídias Interativas é especialista em análise de imagens. Utilizamos milhares de imagens para treinar nossos algoritmos de análise, permitindo assim uma alta taxa de acuracidade nas nossas soluções.</p>
       </div>
     </section>
-  
+    
+    <section class="artigo">
+      <h2>Galeria</h2>
+    <div class="border"></div>
+    <a id="botao-demonstracao" href="./galeria.html">
+      <img id="img-botao" src="./assets/img/logo_V.png" alt="logo">
+    </a>
+    <div id="text-demontracao">
+      <p class="elemento-texto"><spam class="destaque">Clique no Icone acima</spam> e veja nossos vídeos, assim você irá entender como podemos inovar em sua empresa</p>
+    </div>
+  </section>
   </main>
 
   <!-- Página -->
@@ -256,14 +276,14 @@
     </div>
   </div>
 
-  <!-- solução 03 -->
-  <!-- Novo footer -->
+  
+
 
   <!-- FOOTER -->
   <div class="footer">
-    <div class="footer-bottom">
-      EYEVISION Mídias Interativas &copy; 2021. Todos os direitos reservados.
-    </div>
+      <div class="footer-bottom">
+          EYEVISION Mídias Interativas &copy; 2021. Todos os direitos reservados.
+      </div>
   </div>
   <!-- //FOOTER -->
 
@@ -279,19 +299,24 @@
   <!-- animate -->
   <script src="js/wow.min.js"></script>
   <script>
-    new WOW().init();
+      new WOW().init();
   </script>
 
   <!-- GOOGLE -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170464454-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-170464454-1');
+      gtag("config", "UA-170464454-1");
   </script>
-
-
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>

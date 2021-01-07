@@ -18,7 +18,6 @@
 .footer .whats{
   text-decoration: none;
   color: rgb(184, 184, 184);
-  /* padding-left: 50px; */
   }
 .footer .about{
   margin-left: 100px;
@@ -35,18 +34,8 @@
   bottom: 0px;
   left: 0px;
   padding-top: 20px;
+  
 }
-/* .about a{
-  margin: auto;
-  display: flex;
-  width: 200px; 
-  height: 200px;
-  transition: 0.4s;
-  padding: 100px;
-}
-.about a:link{
-  color: green;
-} */
 #logos{
   margin: auto;
   display: flex;
@@ -54,9 +43,6 @@
   text-decoration: none;
 }
 
-.about a:hover{ 
-  /* transform: scale(1.3); */
-}
 .about a i{
   color: #d3d3d3;
   line-height: 100px;
