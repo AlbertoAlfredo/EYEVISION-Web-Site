@@ -8,7 +8,7 @@
     min-height: 45rem;
 }
 
-.artigo > h2 {
+.artigo > h2, .artigo > a > h2 {
     text-align: center;
     font-size: 3rem;
 }
@@ -16,6 +16,10 @@
 .grid {
     display: grid;
     grid-template-columns: auto 10px auto;
+}
+.grid-contato {
+    display: grid;
+    grid-template-columns: auto 5rem auto;
 }
 
 .elemento-img {
@@ -32,6 +36,11 @@
     font-weight: bold;
 }
 
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
 #video-avatar {
     right: 0px;
 }
@@ -41,7 +50,8 @@
 }
 
 #industria {
-    background-color: rgba(7, 23, 255, 0.116);
+    background-color: rgba(22, 53, 95, 0.295);
+    border-radius: 10px;
     padding: 1%;
     margin-left: 0%;
     margin-right: 0%;
@@ -81,6 +91,16 @@
     max-width: 50%;
 }
 
+.parceiros {
+    min-height: 30rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.logo-parceiro {
+    max-height: 80%;
+}
+
 @media (max-width: 600px){
     .container- {
         background-color: #fff;
@@ -102,6 +122,10 @@
     }
     
     .grid {
+        display: block;
+    }
+
+    .grid-contato {
         display: block;
     }
     

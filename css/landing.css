@@ -42,7 +42,7 @@ html, body{
   margin-top: 15px;
 }
 
-a:hover,a.active, .menu a:hover, .menu a.active{
+a, a:hover,a.active, .menu a:hover, .menu a.active{
   background: none;
   color: #464646;
 }

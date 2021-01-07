@@ -6,6 +6,7 @@
 }
 #midias{
   display: flex;
+  max-width: 20rem;
   text-align: center;
   justify-content: space-between;
 }
