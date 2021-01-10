@@ -4,8 +4,9 @@
 .footer- {
   background: #3f3e3e;
   color: #d3d3d3;
-  min-height: 30rem;
+  min-height: 25rem;
   position: relative;
+  padding-top: 2rem;
 }
 .footer {
   background: #303036;
@@ -47,4 +48,13 @@
   font-size: 2rem;
   display: block;
   text-align: center;
+}
+
+.contato-link, .contato-link:hover, .contato-link.active {
+  background: none;
+  color: #fff;
+}
+
+.logo-midias {
+  font-size: 3em;
 }

@@ -41,6 +41,18 @@
     justify-content: center;
 }
 
+.galeria-supertitulo {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.galeria-supertitulo h1 {
+    margin: 0px;
+}
+
 #video-avatar {
     right: 0px;
 }
@@ -73,13 +85,14 @@
 }
 
 .video-galeria{
-    width: 50%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .video-youtube{
-    min-height: 20rem;
+    min-height: 40em;
+    min-width: 50%;
 }
 .separador {
     height: 10rem;
@@ -144,6 +157,9 @@
     }
     
     .video-galeria{
+        width: 100%;
+    }
+    .video-youtube {
         width: 100%;
     }
     #video-avatar {

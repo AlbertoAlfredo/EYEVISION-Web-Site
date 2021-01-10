@@ -20,15 +20,3 @@ const render = throttle(() => players.forEach(playAnimation), 150);
 render();
 window.addEventListener('scroll', render);
 
-
-/* Animação das imagens da galeria */
-$(".galeria-imagem").bind('mouseover', function () {
-
-    $(this).animate({ height: "200px", width: "200px" });
-
-});
-$(".galeria-imagem").bind('mouseout', function () {
-
-    $(this).animate({ height: "76px", width: "75px" });
-
-});
