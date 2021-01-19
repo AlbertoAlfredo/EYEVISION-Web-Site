@@ -1,0 +1,15 @@
+#particles-js {
+    height: 90%;
+    min-width: 100%;
+    background-color: rgba(97, 96, 96, 0);
+    position: absolute;
+    top: 2rem;
+  }
+  
+
+@media (min-width: 1990px) {
+  #particles-js {
+    min-height: 1900px;
+    background-size: 900px;
+  }
+}

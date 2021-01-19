@@ -1,6 +1,9 @@
 @import "css/bootstrap.min.css";
+@import "css/dropdown.css";
+@import "css/menu.css";
 @import "css/about.css";
 @import "css/landing.css";
+@import "css/particles.css";
 @import "css/corpo.css";
 @import "css/team.css";
 @import "css/footer.css"; 
