@@ -3,13 +3,13 @@
   padding: 0;
   height: 100vh;
 } */
-/* @font-face {
-  font-family: roboto;
-  src: url('./assets/fonts/Roboto-Light.ttf');
-} */
+@font-face {
+  font-family: montSerrat;
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
 
 p, h1, h2, h3, h4{
-  font-family: sans-serif;
+  font-family: "montSerrat", sans-serif;
 }
 
 a, a:hover, a:link {
