@@ -3,7 +3,9 @@
     min-height: 100%;
     padding: 5rem;
 }
-
+.img-carosel{
+    max-height: 48rem;
+}
 .artigo {
     min-height: 45rem;
 }
@@ -121,7 +123,9 @@
         width: 100%;
         padding: 0px;
     }
-    
+    .img-carosel{
+        max-height: 20rem ;
+    }
     .artigo {
         min-height: 100%;
         width: 98%;
