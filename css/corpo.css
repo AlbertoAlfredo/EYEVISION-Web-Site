@@ -34,7 +34,7 @@
     
 }
 .elemento-texto {
-    max-width: 50%;
+    max-width: 48%;
     font-size: 1.3rem;
     margin: 0.5rem;
 }
@@ -52,8 +52,8 @@
 
 #robo {
     background-image: url("../assets/img/robo.jpg");
-    background-position: 10% 10%;
-    background-size: 90%;
+    background-position: 10% 15%;
+    background-size: 100%;
 }
 .elemento-img img {
     max-width: 100%;
