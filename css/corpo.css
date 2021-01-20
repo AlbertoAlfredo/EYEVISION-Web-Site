@@ -50,12 +50,22 @@
     background-size: 100%;
 }
 
-#robo {
+/* #robo {
     background-image: url("../assets/img/robo.jpg");
     background-position: 10% 15%;
     background-size: 100%;
+} */
+#epis {
+    background-image: url("../assets/img/IDENTIFICACAO_AUTOMATICA_DE_EPIS.png");
+    background-size: 100%;
+}
+#covision {
+    background-image: url("../assets/img/faces2.jpg");
+    background-size: 100%;
+    background-position: 0px 8%;
 }
 .elemento-img img {
+    display: none;
     max-width: 100%;
     max-height: 100%;
 }
@@ -186,7 +196,9 @@
         height: 100%;
         margin: 0.5rem;
     }
-    
+    .elemento-img img {
+        display: block;
+    }
     .elemento-texto {
         font-size: 1.1rem;
         margin: 0.5rem;

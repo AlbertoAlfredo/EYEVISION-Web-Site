@@ -4,9 +4,11 @@
 .footer- {
   background: #3f3e3e;
   color: #d3d3d3;
-  min-height: 25rem;
+  min-height: 100%;
   position: relative;
   padding-top: 2rem;
+  padding-bottom: 2.2rem;
+  text-align: center;
 }
 .footer {
   background: #303036;
