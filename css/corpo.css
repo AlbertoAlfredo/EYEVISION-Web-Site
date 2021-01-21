@@ -129,6 +129,27 @@
     margin-right: auto;
 }
 
+#promotora-topo {
+    background-image: url("../assets/img/PROMOTORA.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+#vitrine-topo {
+    background-image: url("../assets/img/vitrine.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+#detepi-topo{
+    background-image: url("../assets/img/vitrine.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
 .video-galeria{
     width: 30%;
     display: block;
