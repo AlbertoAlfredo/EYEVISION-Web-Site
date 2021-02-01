@@ -15,4 +15,10 @@ p, h1, h2, h3, h4{
 a, a:hover, a:link {
   text-decoration:none; 
 }
-
+.filtroPB{
+  transition: .5s;
+}
+.filtroPB:hover{
+  transition: .5s;
+  filter: grayscale(90%);
+}

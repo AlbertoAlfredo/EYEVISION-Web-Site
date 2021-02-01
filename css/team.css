@@ -28,21 +28,26 @@
   padding: 40px 0;
   transition: 0.4s;
 }
-.pe:hover {
+/* .pe:hover {
   background: #ddd;
-}
+} */
 .pe img {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 .p-name {
-  margin: 16px 0;
-  text-transform: uppercase;
+  margin: 16px 20px;
+  padding: 5px;
+  background-color: rgb(30, 30, 73);
+  color: #fff;
+  border-style: none;
 }
 .p-des {
   font-style: italic;
-  color: #3498db;
+  color: rgb(30, 30, 73);
+
+  
 }
 .p-sm {
   margin-top: 12px;
