@@ -1,3 +1,7 @@
+hr {
+	
+}
+
 .container- {
     background-color: #fff;
     min-height: 100%;
@@ -10,7 +14,7 @@
     min-height: 45rem;
 } */
 
-.artigo > h2, .artigo > a > h2 {
+.artigo > h2, .artigo > a > h2, .artigo > div > h2, .artigo> div > a > h2 {
     text-align: center;
     font-size: 3rem;
 }
@@ -39,17 +43,23 @@
     margin: 0.5rem;
 }
 #promotora{
-    background-image: url("https://media.giphy.com/media/AKit7DrtTAc0mVvOW9/source.gif");
-    background-color: #000;
-    background-position: center;
-    background-size: 70%;
+    background-image: url("../assets/img/projecao.jpg");
+    background-position: 0px 10px;
+    background-size: 100%;
 }
 
 #totem{
     background-image: url("../assets/img/totem.jpg");
     background-size: 100%;
 }
-
+#analitics{
+    background-image: url("../assets/img/analitics.png");
+    background-size: 80%;
+}
+#covision{
+    background-image: url("../assets/img/covision.png");
+    background-size: 90%;
+}
 /* #robo {
     background-image: url("../assets/img/robo.jpg");
     background-position: 10% 15%;
@@ -59,11 +69,11 @@
     background-image: url("../assets/img/IDENTIFICACAO_AUTOMATICA_DE_EPIS.png");
     background-size: 100%;
 }
-#covision {
+/* #covision {
     background-image: url("../assets/img/faces2.jpg");
     background-size: 100%;
     background-position: 0px 8%;
-}
+} */
 .elemento-img img {
     display: none;
     max-width: 100%;
@@ -97,7 +107,9 @@
 .galeria-supertitulo h1 {
     margin: 0px;
 }
-
+.galeria-elemento-texto {
+    max-width: 70%;
+}
 #video-avatar {
     right: 0px;
 }
@@ -151,7 +163,14 @@
     height: 90vh;
 }
 .video-galeria{
-    width: 30%;
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video-galeria-youtube{
+
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -2,23 +2,30 @@
   background-color: hotpink;
 }
 .footer- {
-  background: #3f3e3e;
+  background: #000;
   color: #d3d3d3;
   min-height: 100%;
   min-width: 100%;
   position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  border: 2.2rem solid #3f3e3e;
-  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 2.2rem solid #000;
+
 }
 .footer {
-  background: #303036;
+  background: #000;
   color: #d3d3d3;
   height: 0px;
   position: relative;
 }
-
+.footer-texto-direita {
+  text-align: right;
+  right: 0px;
+}
 
 .footer-bottom{
   background: #343a40;
@@ -61,4 +68,11 @@
 
 .logo-midias {
   font-size: 3em;
+}
+
+@media(max-width: 800px){
+  .footer-texto-direita {
+    text-align: center;
+    right: 0px;
+  }
 }
