@@ -29,7 +29,9 @@ p {
   text-align: justify;
   font-size: 20px;
 }
-
+h1, h2 {
+  font-weight: bold;
+}
 a, a:hover, a:link {
   text-decoration:none; 
 }

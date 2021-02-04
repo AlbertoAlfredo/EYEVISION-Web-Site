@@ -31,14 +31,13 @@
 .elemento-img {
     width: 50%;
     overflow: hidden;
-    background-repeat: no-repeat;
     
 }
 .elemento-texto {
     max-width: 48%;
     margin: 0.5rem;
 }
-#promotora{
+/* #promotora{
     background-image: url("../assets/img/projecao.jpg");
     background-position: 0px 10px;
     background-size: 100%;
@@ -55,25 +54,24 @@
 #covision{
     background-image: url("../assets/img/covision.png");
     background-size: 90%;
-}
+} */
 /* #robo {
     background-image: url("../assets/img/robo.jpg");
     background-position: 10% 15%;
     background-size: 100%;
 } */
-#epis {
+/* #epis {
     background-image: url("../assets/img/IDENTIFICACAO_AUTOMATICA_DE_EPIS.png");
     background-size: 100%;
-}
+} */
 /* #covision {
     background-image: url("../assets/img/faces2.jpg");
     background-size: 100%;
     background-position: 0px 8%;
 } */
 .elemento-img img {
-    display: none;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .elemento-texto p {
