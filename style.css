@@ -7,9 +7,27 @@
   font-family: montSerrat;
   src: url('./assets/fonts/Montserrat-Regular.ttf');
 }
+@font-face {
+  font-family: lato;
+  src: url('./assets/fonts/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: lato;
+  src: url('./assets/fonts/Lato-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: lato;
+  src: url('./assets/fonts/Lato-Italic.ttf');
+  font-weight: italic;
+}
 
-p, h1, h2, h3, h4{
-  font-family: "montSerrat", sans-serif;
+p, h1, h2, h3, h4, a, li{
+  font-family: "lato", sans-serif;
+}
+p {
+  text-align: justify;
+  font-size: 20px;
 }
 
 a, a:hover, a:link {
@@ -21,7 +39,4 @@ a, a:hover, a:link {
 .filtroPB:hover{
   transition: .5s;
   filter: grayscale(90%);
-}
-p {
-  text-align: justify;
 }

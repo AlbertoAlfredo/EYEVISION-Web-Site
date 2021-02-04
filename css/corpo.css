@@ -1,6 +1,4 @@
-hr {
-	
-}
+
 
 .container- {
     background-color: #fff;
@@ -16,7 +14,6 @@ hr {
 
 .artigo > h2, .artigo > a > h2, .artigo > div > h2, .artigo> div > a > h2 {
     text-align: center;
-    font-size: 3rem;
 }
 
 .grid {
@@ -39,7 +36,6 @@ hr {
 }
 .elemento-texto {
     max-width: 48%;
-    font-size: 1.3rem;
     margin: 0.5rem;
 }
 #promotora{
@@ -84,7 +80,6 @@ hr {
     max-width: 100%;
 }
 .destaque {
-    font-size: 1.4rem;
     font-weight: bold;
 }
 
