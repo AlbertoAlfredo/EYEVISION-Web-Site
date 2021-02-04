@@ -22,3 +22,6 @@ a, a:hover, a:link {
   transition: .5s;
   filter: grayscale(90%);
 }
+p {
+  text-align: justify;
+}

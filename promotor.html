@@ -94,10 +94,13 @@
     <section class="container">
       <h2 class="texto-centralizar h1">Promotor Holográfico Virtual</h2>
       <div class="border"></div>
-      <div class="centralizar">
-        <img class="img-fluid" src="assets/img/promotores.jpg" alt="">
+      <div class="grid centralizar">
+        <!-- <img class="img-fluid" src="assets/img/promotores.jpg" alt=""> -->
+        <img class="img-fluid gif-banner" src="assets/img/gifs/Gif_Mulher_2.gif" alt="">
+        <img class="img-fluid gif-banner" src="assets/img/gifs/Gif_PapaiNoel_3.gif" alt="">
+        <img class="img-fluid gif-banner" src="assets/img/gifs/Gif_Robo_3.gif" alt="">
       </div>
-
+      <hr class="separador">
 
       <p class="">
         Sistema de Projeção Holográfica total autônomo que interage com o público através de Inteligência Artificial
@@ -107,7 +110,7 @@
         Shoppings, feiras, supermercados, campanhas publicitárias, entre outras.
       </p>
       <h5>Disponível em duas Versões:</h5>
-      <ul>
+      <ul style="list-style:disc; margin-left: 20px;">
         <li>Avatares 3D</li>
         <li>Avatares Humanos</li>
       </ul>
@@ -313,13 +316,27 @@
       padding: 0 100px 0 100px;
     }
 
+    .gif-banner {
+      width: 40%;
+    }
+
     p {
       font-size: 20px;
+      text-align: justify;
     }
 
     .check {
 
       max-width: 10px;
+    }
+    hr {
+      border: none;
+    }
+    @media (max-width: 800px){
+      .grid{
+        flex-direction:row;
+      }
+      
     }
   </style>
 </body>
