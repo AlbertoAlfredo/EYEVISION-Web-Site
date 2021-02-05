@@ -89,26 +89,38 @@
 
     <!-- Página -->
 
-    <main class="container-">
+    <main id="blogApp" class="container-">
 
-        <section id="blogApp" class="artigo container">
+        <section class="artigo container">
             <h2 class="texto-centralizar">Eventos</h2>
             <div class="border"></div>
             <hr>
-            <article v-for="evento in eventos">
-                <h1>{{evento.titulo}}</h1>
-                <img :src="evento.imagemDestacada" :alt="evento.imagemAlt">
-                <p>{{evento.texto}}</p>
+            <article v-for="evento in eventos" :key="'evento'+evento.index">
+                <div v-if="evento.lerMais">
+                    <h1>{{evento.titulo}}</h1>
+                <img class="img-fluid" :src="evento.imagemDestacada" :alt="evento.imagemAlt">
+                <p v-html="evento.texto"></p>
+                <a @click="evento.lerMais = !evento.lerMais">Veja Menos</a>
                 <ul>
-                    <li v-if="imagem" v-for="imagem in evento.imagens"><img :src="imagem" alt=""></li>
+                    <li v-if="imagem" v-for="imagem in evento.imagens"><img class="img-fluid" :src="imagem" alt=""></li>
                     <li v-if="video" v-for="video in evento.videos"><video :src="video"></video></li>
                 </ul>
+                <a @click="evento.lerMais = !evento.lerMais">Veja Menos</a>
+                </div>
+                <div v-else>
+                    <h1>{{evento.titulo}}</h1>
+                <img class="img-fluid" :src="evento.imagemDestacada" :alt="evento.imagemAlt">
+                <p :inner-html.prop="evento.texto  | truncate(140)"></p>
+                <p><a @click="evento.lerMais = !evento.lerMais">Leia Mais</a></p>
+
+                </div>
             </article>
-        </section>    
+        </section>
+
     </main>
     <!-- Página -->
 
-
+    
 
     <!-- Novo footer -->
 
@@ -217,34 +229,42 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    
 </body>
+
 <script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/vue2-filters/dist/vue2-filters.min.js"></script>
 <script>
     let app = new Vue({
         el: "#blogApp",
         data: {
             eventos: [
-            {
-                titulo: "Teste Título",
-                texto: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea officia aperiam, est fugiat eum veritatis, deserunt libero inventore maxime quo incidunt animi! Mollitia corrupti iste adipisci itaque libero temporibus natus?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, praesentium eum nam at dicta quos dolore rerum! Reprehenderit blanditiis in maiores ipsum quibusdam iste velit reiciendis quos quas minus? Expedita.
-Distinctio libero fugit tempora consequuntur debitis? Voluptate molestiae esse illum rem possimus iure officiis rerum, delectus eius dignissimos et? Quisquam illum hic rem dolor consequatur quam autem animi voluptate quibusdam.
-Molestiae facere rem atque nesciunt? Tempora sequi quas consectetur odit eaque labore, enim culpa, cupiditate, molestiae ipsum asperiores sapiente aliquam. Iure officiis cumque obcaecati nulla officia voluptatum assumenda, enim corrupti.`,
-                imagemDestacada:  "teste de imagem",
-                videoDestacado: "teste de video",
-                imagemAlt: "teste imagem alt",
-                imagens: [
-                    "assets/img/faces.jpg",
-                ],
-                videos: [
-                    "",
+                
+                {
+                    lerMais: false,
+                    titulo: "Vaticano",
+                    texto: `No dia 18 de Setembro de 2020 foi realizado o “Dia da Tecnologia” da empresa Vaticano localizada na cidade de Curitiba/PR, onde os colaboradores tiveram a oportunidade de conhecer alguns recursos tecnológicos oferecidos pela empresa.<br>
+                    Nosso mascote holográfico EYETRON foi atração do evento, onde recepcionou todos os convidados que compareceram explicando todo o roteiro do dia. A interação ocorreu por meio de Inteligência Artificial por meio de reconhecimento facial e chatbot.`,
+                    imagemDestacada: "assets/img/vaticano/IMG_8428.jpg",
+                    videoDestacado: "teste de video",
+                    imagemAlt: "teste imagem alt",
+                    imagens: [
+                        "assets/img/vaticano/IMG_8410.jpg",
+                        "assets/img/vaticano/IMG_8411.jpg",
+                        "assets/img/vaticano/IMG_8414.jpg",
+                        "assets/img/vaticano/IMG_8416.jpg",
+                        "assets/img/vaticano/IMG_8420.jpg",
+                        "assets/img/vaticano/IMG_8421.jpg",
+                        "assets/img/vaticano/IMG_8426.jpg",
+                    ],
+                    videos: [
+                        "",
 
-                ],
-                lerMais: false
-            },
+                    ],
+                    
+                },
             ],
-        }
+        },
     })
 </script>
 
