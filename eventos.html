@@ -95,23 +95,23 @@
             <h2 class="texto-centralizar">Eventos</h2>
             <div class="border"></div>
             <hr>
-            <article v-for="evento in eventos" :key="'evento'+evento.index">
+            <article v-for="(evento, index) in eventos" :id="'evento'+index" :key="'evento'+index">
                 <div v-if="evento.lerMais">
                     <h1>{{evento.titulo}}</h1>
                 <img class="img-fluid" :src="evento.imagemDestacada" :alt="evento.imagemAlt">
                 <p v-html="evento.texto"></p>
-                <a @click="evento.lerMais = !evento.lerMais">Veja Menos</a>
+                <a class="linkLerMais" :href="'eventos.html#evento'+index" @click="evento.lerMais = !evento.lerMais">Veja Menos</a>
                 <ul>
                     <li v-if="imagem" v-for="imagem in evento.imagens"><img class="img-fluid" :src="imagem" alt=""></li>
                     <li v-if="video" v-for="video in evento.videos"><video :src="video"></video></li>
                 </ul>
-                <a @click="evento.lerMais = !evento.lerMais">Veja Menos</a>
+                <a class="linkLerMais" @click="evento.lerMais = !evento.lerMais" :href="'#evento'+index">Veja Menos</a>
                 </div>
                 <div v-else>
                     <h1>{{evento.titulo}}</h1>
                 <img class="img-fluid" :src="evento.imagemDestacada" :alt="evento.imagemAlt">
                 <p :inner-html.prop="evento.texto  | truncate(140)"></p>
-                <p><a @click="evento.lerMais = !evento.lerMais">Leia Mais</a></p>
+                <p><a class="linkLerMais" @click="evento.lerMais = !evento.lerMais">Leia Mais</a></p>
 
                 </div>
             </article>
@@ -214,6 +214,7 @@
 
     <!-- animate -->
     <!-- GOOGLE -->
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170464454-1"></script>
     <script>
@@ -245,17 +246,62 @@
                     titulo: "Vaticano",
                     texto: `No dia 18 de Setembro de 2020 foi realizado o “Dia da Tecnologia” da empresa Vaticano localizada na cidade de Curitiba/PR, onde os colaboradores tiveram a oportunidade de conhecer alguns recursos tecnológicos oferecidos pela empresa.<br>
                     Nosso mascote holográfico EYETRON foi atração do evento, onde recepcionou todos os convidados que compareceram explicando todo o roteiro do dia. A interação ocorreu por meio de Inteligência Artificial por meio de reconhecimento facial e chatbot.`,
-                    imagemDestacada: "assets/img/vaticano/IMG_8428.jpg",
+                    imagemDestacada: "static/vaticano/IMG_8428.jpg",
                     videoDestacado: "teste de video",
                     imagemAlt: "teste imagem alt",
                     imagens: [
-                        "assets/img/vaticano/IMG_8410.jpg",
-                        "assets/img/vaticano/IMG_8411.jpg",
-                        "assets/img/vaticano/IMG_8414.jpg",
-                        "assets/img/vaticano/IMG_8416.jpg",
-                        "assets/img/vaticano/IMG_8420.jpg",
-                        "assets/img/vaticano/IMG_8421.jpg",
-                        "assets/img/vaticano/IMG_8426.jpg",
+                        "static/vaticano/IMG_8410.jpg",
+                        "static/vaticano/IMG_8411.jpg",
+                        "static/vaticano/IMG_8414.jpg",
+                        "static/vaticano/IMG_8416.jpg",
+                        "static/vaticano/IMG_8420.jpg",
+                        "static/vaticano/IMG_8421.jpg",
+                        "static/vaticano/IMG_8426.jpg",
+                    ],
+                    videos: [
+                        "",
+
+                    ],
+                    
+                },
+                {
+                    lerMais: false,
+                    titulo: "Distrito",
+                    texto: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quia quisquam alias nulla sapiente minus impedit amet obcaecati, repellat quidem, vitae repudiandae rerum minima ab velit dolores odio saepe perspiciatis?<br>
+    Enim expedita deleniti accusantium optio pariatur consectetur eum quod nulla maxime reiciendis alias corrupti obcaecati a architecto minima praesentium ipsa voluptatibus tenetur doloribus, fuga sint? Similique alias tempora aut laborum!<br>
+    Obcaecati sint dolorem est perferendis, libero quod illum sit aliquid aspernatur cumque reiciendis fuga dolorum nostrum culpa accusamus explicabo nesciunt soluta sequi quaerat recusandae. Sequi similique sapiente possimus illum ducimus?`,
+                    imagemDestacada: "static/Distrito/Flavio_Distrito.jpg",
+                    videoDestacado: "teste de video",
+                    imagemAlt: "teste imagem alt",
+                    imagens: [
+                        "static/Distrito/1.jpeg",
+                        "static/Distrito/2.jpeg",
+                        "static/Distrito/3.jpeg",
+                        "static/Distrito/distrito_2020.jpg",
+                    ],
+                    videos: [
+                        "",
+
+                    ],
+                    
+                },
+                {
+                    lerMais: false,
+                    titulo: "Oest Plaza Shopping Andradina",
+                    texto: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quia quisquam alias nulla sapiente minus impedit amet obcaecati, repellat quidem, vitae repudiandae rerum minima ab velit dolores odio saepe perspiciatis?<br>
+    Enim expedita deleniti accusantium optio pariatur consectetur eum quod nulla maxime reiciendis alias corrupti obcaecati a architecto minima praesentium ipsa voluptatibus tenetur doloribus, fuga sint? Similique alias tempora aut laborum!<br>
+    Obcaecati sint dolorem est perferendis, libero quod illum sit aliquid aspernatur cumque reiciendis fuga dolorum nostrum culpa accusamus explicabo nesciunt soluta sequi quaerat recusandae. Sequi similique sapiente possimus illum ducimus?`,
+                    imagemDestacada: "static/oestplaza/img01.jpeg",
+                    videoDestacado: "teste de video",
+                    imagemAlt: "teste imagem alt",
+                    imagens: [
+                        "static//oestplaza/img02.jpeg",
+                        "static//oestplaza/img03.jpeg",
+                        "static//oestplaza/img04.jpeg",
+                        "static//oestplaza/img05.jpeg",
+                        "static//oestplaza/img06.jpeg",
+                        "static//oestplaza/img07.jpeg",
+                        "static//oestplaza/img08.jpeg",
                     ],
                     videos: [
                         "",
@@ -267,6 +313,10 @@
         },
     })
 </script>
-
+<style>
+    .linkLerMais{
+        color: blue;
+    }
+</style>
 
 </html>
