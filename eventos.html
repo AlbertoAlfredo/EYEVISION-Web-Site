@@ -91,26 +91,20 @@
 
     <main class="container-">
 
-        <section class="artigo container" id="inicio">
-            <h2 class="texto-centralizar">Sobre nós</h2>
+        <section id="blogApp" class="artigo container">
+            <h2 class="texto-centralizar">Eventos</h2>
             <div class="border"></div>
-            <!-- <div class="elemento-img">
-          <img src="./assets/img/venha_conhecer.jpg" alt="Venha conhecer um mundo de inovação">
-        </div> -->
-            <p class="texto-centralizar">
-                <spam class="destaque">A EYEVISION Mídias Interativas é uma empresa que desenvolve soluções interativas
-                    e
-                    inovadoras, que utilizam Inteligência Artificial e Visão Computacional para inovar a experiência de
-                    compra
-                    do consumidor.</spam> Nossas soluções ajudam empresas a divulgar produtos, marcas e serviços de
-                forma
-                inovadora, criativa, inteligente e impactante. Além disso, conseguimos mensurar o fluxo de pessoas e o
-                nível
-                de satisfação dos clientes através da análise das expressões faciais, entre outros.
-            </p>
-            <div class="centralizar">
-                <a href="#solucoes"><button class="btn btn-primary">Conheça nossas soluções</button></a>
-            </div>
+            <hr>
+            <article v-for="evento in eventos">
+                <h1>{{evento.titulo}}</h1>
+                <img :src="evento.imagemDestacada" :alt="evento.imagemAlt">
+                <p>{{evento.texto}}</p>
+                <ul>
+                    <li v-if="imagem" v-for="imagem in evento.imagens"><img :src="imagem" alt=""></li>
+                    <li v-if="video" v-for="video in evento.videos"><video :src="video"></video></li>
+                </ul>
+            </article>
+        </section>    
     </main>
     <!-- Página -->
 
@@ -207,11 +201,6 @@
     <script type="text/javascript" src="js/nav.js"></script>
 
     <!-- animate -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
     <!-- GOOGLE -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170464454-1"></script>
@@ -233,35 +222,29 @@
 <script src="node_modules/vue/dist/vue.js"></script>
 <script>
     let app = new Vue({
-        el: "#app",
+        el: "#blogApp",
         data: {
             eventos: [
             {
-                titulo= "",
-                texto= ``,
-                imagemDestacada= "",
-                imagens= [
-                    "",
+                titulo: "Teste Título",
+                texto: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea officia aperiam, est fugiat eum veritatis, deserunt libero inventore maxime quo incidunt animi! Mollitia corrupti iste adipisci itaque libero temporibus natus?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, praesentium eum nam at dicta quos dolore rerum! Reprehenderit blanditiis in maiores ipsum quibusdam iste velit reiciendis quos quas minus? Expedita.
+Distinctio libero fugit tempora consequuntur debitis? Voluptate molestiae esse illum rem possimus iure officiis rerum, delectus eius dignissimos et? Quisquam illum hic rem dolor consequatur quam autem animi voluptate quibusdam.
+Molestiae facere rem atque nesciunt? Tempora sequi quas consectetur odit eaque labore, enim culpa, cupiditate, molestiae ipsum asperiores sapiente aliquam. Iure officiis cumque obcaecati nulla officia voluptatum assumenda, enim corrupti.`,
+                imagemDestacada:  "teste de imagem",
+                videoDestacado: "teste de video",
+                imagemAlt: "teste imagem alt",
+                imagens: [
+                    "assets/img/faces.jpg",
                 ],
-                videos = [
+                videos: [
                     "",
+
                 ],
-                lerMais = false
-            }
+                lerMais: false
+            },
             ],
-            noticias: [
-            titulo= "",
-                imagemDestacada= "",
-                texto= ``,
-                imagens= [
-                    "",
-                ],
-                videos = [
-                    "",
-                ],
-                lerMais = false
-            ]
-        },
+        }
     })
 </script>
 
